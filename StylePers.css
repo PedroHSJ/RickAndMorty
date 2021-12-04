@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Rick';
+    src: url(get_schwifty.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body{
+    background-color:  #0D262D;
+    font-family: 'Rick';
+}
+
+
+#personagens{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+    
+    text-align: center;
+
+    
+}
+
+#personagens div{
+    border: 3px solid black;
+    border-radius: 10px;
+
+    min-width: 320px;
+    width: max-content;
+    min-height: 380px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+
+    margin: 20px auto;
+    padding: 10px;
+
+    box-shadow: 5px 5px 10px #000;
+
+    background-color: #eee;
+    animation: carta 1.2s ease-out forwards;
+    
+}
+
+#personagens img{
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 10px #888;
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    width: 290px;
+    
+}
+
+section{
+    grid-area: section;
+}
+
+#SearchBar{
+    width: 250px;
+    height: 25px;
+
+    padding: 5px;
+    margin: 0;
+
+    box-shadow: 5px 5px 10px #000;
+
+    border-radius: 10px;
+    border: 2px solid #fff;
+
+}
+
+#btn{
+    margin: 0;
+    width: 60px;
+    height: 40px;
+
+    box-shadow: 5px 5px 10px #000;
+
+}
+
+#btn:hover{
+    cursor: pointer;
+}
+
+@keyframes carta{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+#personagens img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+#personagens h1{
+
+    margin: 20px;
+    color: #0f0;
+    
+    animation: h1 1s ease-in forwards;
+}
+
+@keyframes h1 {
+    to{
+    transform: scale(1);
+    filter: blur(100%);    
+    }
+    from{
+    transform: scale(0);
+        filter: blur(0);
+    }
+}
+#personagens div p{
+    font-size: 18pt;
+}
+
+@media (min-width:1024px){
+    #personagens{
+        display: grid;
+        grid-template-rows: 200px 50px auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "h1" "buscar" "conteudopers";
+    }
+
+    #personagens h1{
+        grid-area: h1;
+        font-size: 38pt;
+    }
+
+    #buscar{
+        grid-area: buscar;
+    }
+
+    #conteudopers{
+        grid-area: conteudopers;
+      
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+   
+}

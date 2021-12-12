@@ -153,7 +153,7 @@ main{
 
 /* The switch - the box around the slider */
 .switch {
-    font-size: 17px;
+    font-size: 25px;
     position: relative;
     display: inline-block;
     width: 3.5em;
@@ -236,5 +236,7 @@ main{
 
     }
 
-   
+   .switch{
+       font-size: 17px;
+   }
 }

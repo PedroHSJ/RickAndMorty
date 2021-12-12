@@ -17,15 +17,22 @@
 
         <h1>Rick and Morty Characters</h1>
 
+
         <section id="buscar">
 
             <input type="text" placeholder="Search" name="pesq" id="SearchBar">
 
             <button id="btn" onclick="enviar()">Search</button>
         </section>
+        <section id="conteudo-wrapper">
 
-        <section id="conteudopers"></section>
+            <section id="conteudopers"></section>
+        </section>
 
+        <label id="toggle" class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
     </main>
 
     <script src="axios.js"></script>

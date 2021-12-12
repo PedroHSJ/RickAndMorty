@@ -109,11 +109,11 @@ main{
 
     box-shadow: 5px 5px 10px #000;
 
-    background-color: var(--bg-light);
+    background-color: var(--bg-dark);
 
-    border: 1px solid var(--bg-light);
+    border: 1px solid var(--bg-dark);
 
-    color: var(--bg-dark);
+    color: var(--bg-light);
 
     border-radius: 15px;
 

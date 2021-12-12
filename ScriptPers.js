@@ -54,8 +54,8 @@ toggle.addEventListener('change', () => {
     document.body.classList.toggle('dark');
 
     if (theme === 'dark') {
-        window.localStorage.setItem('light');
-    } else window.localStorage.setItem('dark')
+        window.localStorage.setItem("theme",'light');
+    } else window.localStorage.setItem("theme",'dark')
 })
 
 

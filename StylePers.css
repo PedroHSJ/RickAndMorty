@@ -115,6 +115,8 @@ main{
 
     color: var(--bg-dark);
 
+    border-radius: 15px;
+
 }
 
 #btn:hover{
@@ -253,6 +255,7 @@ main{
 
    #btn{
        height: 40px;
+       border-radius: 5px;
    }
 
 

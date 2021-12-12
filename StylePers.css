@@ -21,6 +21,7 @@ body{
 
 .dark{
     --bg-light:#0D262D;
+    --bg-dark:#f5f5f5;
 }
 main{
     margin-bottom: 20px;
@@ -89,7 +90,7 @@ main{
 
 #SearchBar{
     width: 250px;
-    height: 25px;
+    height: 40px;
 
     padding: 5px;
     margin: 0;
@@ -104,9 +105,15 @@ main{
 #btn{
     margin: 0;
     width: 60px;
-    height: 40px;
+    height: 50px;
 
     box-shadow: 5px 5px 10px #000;
+
+    background-color: var(--bg-light);
+
+    border: 1px solid var(--bg-light);
+
+    color: var(--bg-dark);
 
 }
 
@@ -239,4 +246,14 @@ main{
    .switch{
        font-size: 17px;
    }
+
+   #SearchBar{
+       height: 25px;
+   }
+
+   #btn{
+       height: 40px;
+   }
+
+
 }
